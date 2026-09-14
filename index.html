@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de manutenção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id = "container">
+    <h1>Sistema de Chamados de Manutenção</h1>
+    <H2>Abrir chamado</H2>
+    <form id= "formChamado">
+        <label>Equipamento</label><br>
+        <input type="text" id="equipamento" required><br> <br>
+
+        <label>Problema</label> <br>
+        <input type="text" id="problema" required><br> <br>
+
+        <label>Descrição</label><br>
+        <input type="text" id="descricao" required><br> <br>
+
+        <label>Prioridade</label><br>
+        <input type="text" id="prioridade" required><br> <br>
+        
+        <button type="submit">Cadastrar chamado</button>
+    </form>
+    <hr>
+    <center>
+    <h2 id="chamadas-cadastradas">Chamadas Cadastradas</h2>
+    <div id="lista">Carregando...</div>
+    </center>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
